@@ -6,3 +6,6 @@ class Settings(BaseSettings):
     API_V1_STR: str = "/api/v1"
 
     model_config = SettingsConfigDict(env_file=".env", env_ignore_empty=True)
+
+
+settings = Settings()
